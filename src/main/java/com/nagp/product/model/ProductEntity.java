@@ -6,6 +6,8 @@ import lombok.NoArgsConstructor;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import java.util.List;
+
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
@@ -13,7 +15,10 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class ProductEntity {
     @Id
     String id;
+    String productId;
     String name;
     String description;
+    List<String> skus;
+    Category categories;
     long quantity;
 }

@@ -1,0 +1,57 @@
+[{
+  "_id": {
+    "$oid": "64833c3714df378e6defcf11"
+  },
+  "name": "Puma Sports Shoes",
+  "description": "Puma shoes for sports activity like running, cricket, tennis",
+  "skus": ["size_8","size_9"],
+  "quantity": 20,
+  "productId": "3G3tDq50J7",
+  "categories": {
+    "categoryId": "Nl5mOR5kaO",
+    "name": "Shoes"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64833c444bf9a3563d82559f"
+    },
+    "name": "Samsung Galaxy mobile x20",
+    "description": "Samsung Galaxy Smartphones with 5G",
+    "skus": ["color_black","color_gary"],
+    "quantity": 50,
+    "productId": "6xlIRCwXYP",
+    "categories": {
+      "categoryId": "J9l1BuYdXY",
+      "name": "Electronics"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64833c4a9e5b6efff6bdd377"
+    },
+    "name": "Stainless steel xyz cooker",
+    "description": "Stainless steel xyz cooker with 3 litre, 5 litre, 8 litre",
+    "skus": ["size_small","size_medium", "size_large"],
+    "quantity": 50,
+    "productId": "p1mtSWqz2y",
+    "categories": {
+      "categoryId": "sp8li1gwOn",
+      "name": "Home Appliances"
+    }
+  },
+  {
+    "_id": {
+      "$oid": "64833c50818c3fe2d782ad93"
+    },
+    "name": "Investment ideas",
+    "description": "Stainless steel xyz cooker with 3 litre, 5 litre, 8 litre",
+    "skus": ["Lang_English","Lang_Hindi"],
+    "quantity": 25,
+    "productId": "QQ5F5eQ2Pb",
+    "categories": {
+      "categoryId": "n28JbrhMq2",
+      "name": "Books"
+    }
+  }
+]
