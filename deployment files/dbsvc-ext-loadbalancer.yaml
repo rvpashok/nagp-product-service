@@ -4,7 +4,7 @@ metadata:
   name: product-dbsvc-ext-lb
 spec:
   selector:
-    app: product-db-svc
+    app: mongo-db-svc
   ports:
     - port: 80
       targetPort: 27017

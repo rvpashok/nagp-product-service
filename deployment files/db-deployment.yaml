@@ -7,29 +7,28 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: product-db-svc
+      app: mongo-db-svc
   template:
     metadata:
       labels:
-        app: product-db-svc
+        app: mongo-db-svc
     spec:
       containers:
-      - name: product-db-svc
+      - name: mongo-db-svc
         image: mongo:latest
         ports:
         - containerPort: 27017
         env:
-          - name: MONGO_INITDB_ROOT_USERNAME:
-            valueFrom: 
-              - secretRef:
-                name: mongodb-secret
-                key: mongo-root-username
-          - name: MONGO_INITDB_ROOT_PASSWORD:
-            valueFrom: 
-              - secretRef:
-                name: mongodb-secret
-                key: mongo-root-password
-          name: db-deployment
+        - name: MONGO_INITDB_ROOT_USERNAME
+          valueFrom: 
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-username
+        - name: MONGO_INITDB_ROOT_PASSWORD
+          valueFrom: 
+            secretKeyRef:
+              name: mongodb-secret
+              key: mongo-root-password
         volumeMounts:
         - name: www
           mountPath: /usr/share/nginx/html
