@@ -30,11 +30,15 @@ spec:
               name: mongodb-secret
               key: mongo-root-password
         volumeMounts:
-        - name: www
-          mountPath: /usr/share/nginx/html
+        - name: data-volume
+          mountPath: /data/db
+      #volumes:
+      #- name: data-voulme
+      #  persistentVolumeClaim:
+      #    claimName: pv-claim
   volumeClaimTemplates:
   - metadata:
-      name: www
+      name: data-volume
     spec:
       accessModes: [ "ReadWriteOnce" ]
       resources:
