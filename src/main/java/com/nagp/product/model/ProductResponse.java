@@ -17,6 +17,10 @@ public class ProductResponse {
     String name;
     String description;
     List<String> skus;
-    Category categories;
+    Category category;
     long quantity;
+    long createdOn;
+    long updatedOn;
+    String createdBy;
+    String updatedBy;
 }

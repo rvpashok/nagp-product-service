@@ -7,10 +7,14 @@
   "skus": ["size_8","size_9"],
   "quantity": 20,
   "productId": "3G3tDq50J7",
-  "categories": {
+  "category": {
     "categoryId": "Nl5mOR5kaO",
     "name": "Shoes"
-    }
+    },
+  "createdOn": 1686492776604,
+  "updatedOn": 1686492776604,
+  "createdBy": "admin",
+  "updatedBy": "admin"
   },
   {
     "_id": {
@@ -21,10 +25,14 @@
     "skus": ["color_black","color_gary"],
     "quantity": 50,
     "productId": "6xlIRCwXYP",
-    "categories": {
+    "category": {
       "categoryId": "J9l1BuYdXY",
       "name": "Electronics"
-    }
+    },
+    "createdOn": 1686421800000,
+    "updatedOn": 1686421800000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
   },
   {
     "_id": {
@@ -35,10 +43,14 @@
     "skus": ["size_small","size_medium", "size_large"],
     "quantity": 50,
     "productId": "p1mtSWqz2y",
-    "categories": {
+    "category": {
       "categoryId": "sp8li1gwOn",
       "name": "Home Appliances"
-    }
+    },
+    "createdOn": 1686335400000,
+    "updatedOn": 1686335400000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
   },
   {
     "_id": {
@@ -49,9 +61,13 @@
     "skus": ["Lang_English","Lang_Hindi"],
     "quantity": 25,
     "productId": "QQ5F5eQ2Pb",
-    "categories": {
+    "category": {
       "categoryId": "n28JbrhMq2",
       "name": "Books"
-    }
+    },
+    "createdOn": 1686681000000,
+    "updatedOn": 1686681000000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
   }
 ]
