@@ -52,6 +52,9 @@ public class ProductServiceImpl implements ProductService {
         if(productEntity.isPresent()){
             BeanUtils.copyProperties(productEntity.get(), toRet);
         }
+        else{
+            throw new ProductNotFoundException("Product nof found with ProductId:" + productId);
+        }
         return toRet;
     }
 

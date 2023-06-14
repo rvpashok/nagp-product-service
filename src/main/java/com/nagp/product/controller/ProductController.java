@@ -22,7 +22,7 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping
-    @ApiOperation(value = "To load all products", response = ProductResponse.class, code = 200)
+    @ApiOperation(value = "Load all Products", response = ProductResponse.class, code = 200)
     public ResponseEntity<List<ProductResponse>> getAllProducts(){
         List<ProductResponse> toRet = new ArrayList<>();
         toRet = productService.loadAllProducts();
@@ -30,7 +30,7 @@ public class ProductController {
     }
 
     @PostMapping()
-    @ApiOperation(value = "To create products", response = ProductResponse.class, code = 200)
+    @ApiOperation(value = "Create Product", response = ProductResponse.class, code = 200)
     public ResponseEntity<String> createProduct(@RequestBody ProductRequest productRequest){
         String toRet = new String();
         toRet = productService.createProduct(productRequest);
@@ -38,7 +38,7 @@ public class ProductController {
     }
 
     @GetMapping("/{productId}")
-    @ApiOperation(value = "To load product by productID", response = ProductResponse.class, code = 200)
+    @ApiOperation(value = "Load Product by productId", response = ProductResponse.class, code = 200)
     public ResponseEntity<ProductResponse> getProductById(@PathVariable String productId){
         ProductResponse toRet = new ProductResponse();
         toRet = productService.loadProductById(productId);
@@ -46,7 +46,7 @@ public class ProductController {
     }
 
     @DeleteMapping("/{productId}")
-    @ApiOperation(value = "To delete product by productID", response = ProductResponse.class, code = 200)
+    @ApiOperation(value = "Delete Product by productId", response = ProductResponse.class, code = 200)
     public ResponseEntity<String> deleteProductById(@PathVariable String productId){
         String toRet = "";
         toRet = productService.deleteProductById(productId);
