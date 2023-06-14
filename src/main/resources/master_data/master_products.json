@@ -57,13 +57,49 @@
       "$oid": "64833c50818c3fe2d782ad93"
     },
     "name": "Investment ideas",
-    "description": "Stainless steel xyz cooker with 3 litre, 5 litre, 8 litre",
+    "description": "Most values investment related books for stocks, mutual funds and bonds",
     "skus": ["Lang_English","Lang_Hindi"],
     "quantity": 25,
     "productId": "QQ5F5eQ2Pb",
     "category": {
       "categoryId": "n28JbrhMq2",
       "name": "Books"
+    },
+    "createdOn": 1686594612000,
+    "updatedOn": 1686594612000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "6489f0a5a5c6e33a8c74aa97"
+    },
+    "name": "Mobiles Phones",
+    "description": "Samsung Mobile phones  with 6GB RAM & 128GB Memory",
+    "skus": ["Samsung_Black","Samsung_White"],
+    "quantity": 8,
+    "productId": "PgARWwk5g8",
+    "category": {
+      "categoryId": "4enos0PXC4",
+      "name": "Mobiles"
+    },
+    "createdOn": 1686761804914,
+    "updatedOn": 1686761804914,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "6489f0e5ce0deb060e81b5a6"
+    },
+    "name": "Wedding Cards",
+    "description": "Gifts cards of different types with 20% off",
+    "skus": ["Gift_500INR","Gift_1000INR"],
+    "quantity": 100,
+    "productId": "qySy9qmaMx",
+    "category": {
+      "categoryId": "8HA6rTh8AG",
+      "name": "Gift Cards"
     },
     "createdOn": 1686681000000,
     "updatedOn": 1686681000000,
