@@ -24,5 +24,6 @@ spec:
              name: product-svc-config
           - secretRef:
               name: product-svc-secret
+        imagePullPolicy: Always
       imagePullSecrets:
       - name: dockerhub-privaterepo-access
