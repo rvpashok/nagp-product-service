@@ -74,8 +74,8 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public String createProduct(ProductRequest productRequest) {
         String toRet = "";
-        ProductResponse productResponse = loadProductById(productRequest.getProductId());
-        if(productResponse != null && productResponse.getId() != null){
+        Optional<ProductEntity> extProductEntity = productRepository.findByProductId(productRequest.getProductId());
+        if(extProductEntity != null && extProductEntity.isPresent()){
             throw new ProductNotFoundException("Product Already Exist with ProductId:" + productRequest.getProductId());
         }
         ProductEntity productEntity = new ProductEntity();

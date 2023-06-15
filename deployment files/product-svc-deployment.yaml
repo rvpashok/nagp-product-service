@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: product-svc
-        image: rvpashok/nagp-product-service:latest
+        image: rvpashok/nagp-product-service:1.0.0
         ports:
         - containerPort: 80
         envFrom:
