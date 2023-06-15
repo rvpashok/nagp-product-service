@@ -1,0 +1,109 @@
+[{
+  "_id": {
+    "$oid": "64833c3714df378e6defcf11"
+  },
+  "name": "Puma Sports Shoes",
+  "description": "Puma shoes for sports activity like running, cricket, tennis",
+  "skus": ["size_8","size_9"],
+  "quantity": 20,
+  "productId": "3G3tDq50J7",
+  "category": {
+    "categoryId": "Nl5mOR5kaO",
+    "name": "Shoes"
+    },
+  "createdOn": 1686492776604,
+  "updatedOn": 1686492776604,
+  "createdBy": "admin",
+  "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "64833c444bf9a3563d82559f"
+    },
+    "name": "Samsung Galaxy mobile x20",
+    "description": "Samsung Galaxy Smartphones with 5G",
+    "skus": ["color_black","color_gary"],
+    "quantity": 50,
+    "productId": "6xlIRCwXYP",
+    "category": {
+      "categoryId": "J9l1BuYdXY",
+      "name": "Electronics"
+    },
+    "createdOn": 1686421800000,
+    "updatedOn": 1686421800000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "64833c4a9e5b6efff6bdd377"
+    },
+    "name": "Stainless steel xyz cooker",
+    "description": "Stainless steel xyz cooker with 3 litre, 5 litre, 8 litre",
+    "skus": ["size_small","size_medium", "size_large"],
+    "quantity": 50,
+    "productId": "p1mtSWqz2y",
+    "category": {
+      "categoryId": "sp8li1gwOn",
+      "name": "Home Appliances"
+    },
+    "createdOn": 1686335400000,
+    "updatedOn": 1686335400000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "64833c50818c3fe2d782ad93"
+    },
+    "name": "Investment ideas",
+    "description": "Most values investment related books for stocks, mutual funds and bonds",
+    "skus": ["Lang_English","Lang_Hindi"],
+    "quantity": 25,
+    "productId": "QQ5F5eQ2Pb",
+    "category": {
+      "categoryId": "n28JbrhMq2",
+      "name": "Books"
+    },
+    "createdOn": 1686594612000,
+    "updatedOn": 1686594612000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "6489f0a5a5c6e33a8c74aa97"
+    },
+    "name": "Mobiles Phones",
+    "description": "Samsung Mobile phones  with 6GB RAM & 128GB Memory",
+    "skus": ["Samsung_Black","Samsung_White"],
+    "quantity": 8,
+    "productId": "PgARWwk5g8",
+    "category": {
+      "categoryId": "4enos0PXC4",
+      "name": "Mobiles"
+    },
+    "createdOn": 1686761804914,
+    "updatedOn": 1686761804914,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  },
+  {
+    "_id": {
+      "$oid": "6489f0e5ce0deb060e81b5a6"
+    },
+    "name": "Wedding Cards",
+    "description": "Gifts cards of different types with 20% off",
+    "skus": ["Gift_500INR","Gift_1000INR"],
+    "quantity": 100,
+    "productId": "qySy9qmaMx",
+    "category": {
+      "categoryId": "8HA6rTh8AG",
+      "name": "Gift Cards"
+    },
+    "createdOn": 1686681000000,
+    "updatedOn": 1686681000000,
+    "createdBy": "admin",
+    "updatedBy": "admin"
+  }
+]
