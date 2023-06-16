@@ -53,7 +53,7 @@ public class ProductServiceImpl implements ProductService {
             BeanUtils.copyProperties(productEntity.get(), toRet);
         }
         else{
-            throw new ProductNotFoundException("Product nof found with ProductId:" + productId);
+            throw new ProductNotFoundException("Product not found with ProductId: " + productId);
         }
         return toRet;
     }
@@ -67,7 +67,7 @@ public class ProductServiceImpl implements ProductService {
             return toRet;
         }
         else {
-            throw new ProductNotFoundException("Product nof found with ProductId:" + productId);
+            throw new ProductNotFoundException("Product not found with ProductId: " + productId);
         }
     }
 
