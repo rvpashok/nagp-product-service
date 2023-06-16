@@ -6,11 +6,11 @@ Sample Product Micro Service built using Springboot & MongoDB. It having REST AP
 
 
 
-*1. Clone the service application*
+#### 1. Clone the service application ####
 
 https://github.com/rvpashok/nagp-product-service.git
 
-*2. Database setup*
+#### 2. Database setup ####
 
 Install MongoDB and create database `ProductDB` and create collection `Products`
 
@@ -20,7 +20,7 @@ i. Open the `src/main/resources/application.properties` file
 
 ii. Change the username and password in `spring.data.mongodb.username` and `spring.data.mongodb.password` property.
 
-*3. Build and Deploy the Service*
+#### 3. Build and Deploy the Service ####
 
 Follow below steps to run the app: 
 
