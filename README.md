@@ -10,10 +10,82 @@ Sample Product Micro Service built using Springboot & MongoDB. It having REST AP
 
 https://github.com/rvpashok/nagp-product-service.git
 
-*2. Database deployemnt*
+*2. Database setup*
 
-```bash
-  npm install my-project
-  cd my-project
+Install MongoDB and create database `ProductDB` and create collection `Products`
+
+Based on your installation change the MongoDB username and password in Product Microservice configuration file.
+
+i. Open the `src/main/resources/application.properties` file
+
+ii. Change the username and password in `spring.data.mongodb.username` and `spring.data.mongodb.password` property.
+
+*3. Build and Deploy the Service*
+
+Follow below steps to run the app: 
+
+i. Open command prompty or IDE terminal from project root directory and run `maven clean install -U` or `mvn package`
+
+ii. Run the application using `JAVA -JAR target/product-1.0.0-SNAPSHOT.jar` or Run the JAR directly using IDE options.
+
+iii. By default app will start and run in http://localhost:8080
+
+iv. Use health check endpoint to validate the app http://localhost:8080/productservices/ping
+
+
+
+
+
+
+    
+## API Reference
+
+#### Ping
+
+```http
+  GET /productservices/ping
 ```
-https://readme.so/editor
+
+
+#### Get All Products
+
+```http
+  GET /productservices/products
+```
+
+
+#### Get Product ById
+```http
+  GET /productservices/products/{productId}
+```
+
+#### Create Product
+```http
+  POST /productservices/products/
+```
+*Sample ProductRequest Body:*
+
+`{
+    "productId": "String",
+    "description": "String",
+    "skus": [
+    ],
+    "category": {
+        "categoryId": "String",
+        "name": "String"
+    },
+    "quantity": long
+}`
+
+#### Delete Product ById
+```http
+  DELETE /productservices/products/{productId}
+```
+
+
+
+
+## Authors
+
+- [@rvpashok](https://github.com/rvpashok)
+
