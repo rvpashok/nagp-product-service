@@ -32,10 +32,6 @@ spec:
         volumeMounts:
         - name: data-volume
           mountPath: /data/db
-      #volumes:
-      #- name: data-volume
-      #  persistentVolumeClaim:
-      #    claimName: pv-claim
   volumeClaimTemplates:
   - metadata:
       name: data-volume
