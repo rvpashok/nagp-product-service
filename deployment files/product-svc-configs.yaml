@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: product-svc-config
+  namespace: default
+data:
+  MONGO_DB_HOST: "db-headless-service"
+  MONGO_DB_PORT: "27017"
+  MONGO_DB_NAME: "ProductDB"
+  

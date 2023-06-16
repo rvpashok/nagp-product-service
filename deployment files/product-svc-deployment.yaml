@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-svc-deployment
+  labels:
+    app: product-svc
+spec:
+  replicas: 1
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  selector:
+    matchLabels:
+      app: product-svc
+  template:
+    metadata:
+      labels:
+        app: product-svc
+    spec:
+      containers:
+      - name: product-svc
+        image: rvpashok/nagp-product-service:1.0.0
+        ports:
+        - containerPort: 80
+        readinessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 5
+          periodSeconds: 20
+        livenessProbe:
+          tcpSocket:
+            port: 8080
+          initialDelaySeconds: 60
+          periodSeconds: 20
+        resources:
+          limits:
+            cpu: "600m"
+            memory: "800Mi"
+          requests:
+            cpu: "400m"
+            memory: "500Mi"
+        envFrom:
+          - configMapRef:
+             name: product-svc-config
+          - secretRef:
+              name: product-svc-secret
+        imagePullPolicy: Always
+      imagePullSecrets:
+      - name: dockerhub-privaterepo-access
