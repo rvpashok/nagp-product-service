@@ -47,6 +47,11 @@ https://hub.docker.com/r/rvpashok/nagp-product-service
 
 *Note: Add domain / loadbalancer ip address to all API endpoints*
 
+Swagger Contracts:
+	Swagger_2_API_Docs.json file present inside the API Contracts repo folder. Import this file into https://editor.swagger.io/ to view the API Contracts
+	
+	
+
 #### Ping
 
 ```http
