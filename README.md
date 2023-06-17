@@ -45,7 +45,7 @@ https://hub.docker.com/r/rvpashok/nagp-product-service
     
 ## API Reference
 
-### Note: ### Add domain prefix to all endpoints 
+*Note: Add domain / loadbalancer ip address to all API endpoints *
 
 #### Ping
 
