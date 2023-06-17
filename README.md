@@ -1,5 +1,5 @@
-# Nagp Product Services
-Sample Product Micro Service built using Springboot & MongoDB. It having REST API Endpoints to handle product management in ecommerce platform. 
+# Nagp Product Services #
+Sample Product MicroService built using Springboot & MongoDB. It having REST API endpoints to handle product management in ecommerce platform. 
 
 ## Steps to setup the product service
 
@@ -44,6 +44,8 @@ https://hub.docker.com/r/rvpashok/nagp-product-service
 
     
 ## API Reference
+
+###  Note: ### Add domain prefix to all endpoints 
 
 #### Ping
 
