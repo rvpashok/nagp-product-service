@@ -1,7 +1,7 @@
 apiVersion: apps/v1
 kind: StatefulSet
 metadata:
-  name: db-deployment
+  name: mongo-db-deployment
 spec:
   serviceName: "db-headless-service"
   replicas: 1
