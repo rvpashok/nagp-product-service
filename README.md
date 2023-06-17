@@ -33,7 +33,7 @@ iii. By default app will start and run in http://localhost:8080
 iv. Use health check endpoint to validate the app http://localhost:8080/productservices/ping
 
 
-#### 3. Docker image reference ####
+#### 4. Docker image reference ####
 
 i. It's dockerized application, same product microservice docker image can find in below path: 
 https://hub.docker.com/r/rvpashok/nagp-product-service
