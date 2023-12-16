@@ -1,19 +1,17 @@
-package com.nagp.product.model;
+package com.amcart.product.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import org.springframework.data.annotation.Id;
-import org.springframework.data.mongodb.core.mapping.Document;
+import lombok.Setter;
 
 import java.util.List;
 
-@Data
+@Getter
+@Setter
 @AllArgsConstructor
 @NoArgsConstructor
-@Document(collection = "Products")
-public class ProductEntity {
-    @Id
+public class ProductResponse {
     String id;
     String productId;
     String name;

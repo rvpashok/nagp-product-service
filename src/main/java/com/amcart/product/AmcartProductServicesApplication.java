@@ -1,9 +1,8 @@
-package com.nagp.product;
+package com.amcart.product;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import springfox.documentation.builders.ApiInfoBuilder;
 import springfox.documentation.builders.PathSelectors;
 import springfox.documentation.builders.RequestHandlerSelectors;
@@ -15,10 +14,10 @@ import javax.annotation.PostConstruct;
 
 @SpringBootApplication
 @EnableSwagger2
-public class NagpProductServicesApplication {
+public class AmcartProductServicesApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NagpProductServicesApplication.class, args);
+		SpringApplication.run(AmcartProductServicesApplication.class, args);
 	}
 
 	@Bean
@@ -31,7 +30,7 @@ public class NagpProductServicesApplication {
 						.description("Product microservice API details")
 						.version("1.0").build())
 				.select()
-				.apis(RequestHandlerSelectors.basePackage("com.nagp.product"))
+				.apis(RequestHandlerSelectors.basePackage("com.amcart.product"))
 				.paths(PathSelectors.any()).build();
 	}
 }

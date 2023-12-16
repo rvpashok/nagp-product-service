@@ -1,4 +1,4 @@
-package com.nagp.product.exception;
+package com.amcart.product.exception;
 
 
 public class ProductNotFoundException extends RuntimeException{

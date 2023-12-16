@@ -1,6 +1,6 @@
-package com.nagp.product.repository;
+package com.amcart.product.repository;
 
-import com.nagp.product.model.ProductEntity;
+import com.amcart.product.model.ProductEntity;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.springframework.stereotype.Repository;

@@ -1,7 +1,7 @@
-package com.nagp.product.service;
+package com.amcart.product.service;
 
-import com.nagp.product.model.ProductRequest;
-import com.nagp.product.model.ProductResponse;
+import com.amcart.product.model.ProductRequest;
+import com.amcart.product.model.ProductResponse;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

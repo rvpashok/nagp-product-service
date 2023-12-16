@@ -1,8 +1,8 @@
-package com.nagp.product.controller;
+package com.amcart.product.controller;
 
-import com.nagp.product.model.ProductRequest;
-import com.nagp.product.model.ProductResponse;
-import com.nagp.product.service.ProductService;
+import com.amcart.product.service.ProductService;
+import com.amcart.product.model.ProductRequest;
+import com.amcart.product.model.ProductResponse;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;

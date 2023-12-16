@@ -1,11 +1,11 @@
-package com.nagp.product.service.impl;
+package com.amcart.product.service.impl;
 
-import com.nagp.product.exception.ProductNotFoundException;
-import com.nagp.product.model.ProductEntity;
-import com.nagp.product.model.ProductRequest;
-import com.nagp.product.model.ProductResponse;
-import com.nagp.product.repository.ProductRepository;
-import com.nagp.product.service.ProductService;
+import com.amcart.product.exception.ProductNotFoundException;
+import com.amcart.product.repository.ProductRepository;
+import com.amcart.product.model.ProductEntity;
+import com.amcart.product.model.ProductRequest;
+import com.amcart.product.model.ProductResponse;
+import com.amcart.product.service.ProductService;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;

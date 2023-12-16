@@ -1,4 +1,4 @@
-package com.nagp.product.model;
+package com.amcart.product.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

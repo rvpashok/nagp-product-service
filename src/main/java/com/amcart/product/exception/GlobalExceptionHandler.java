@@ -1,4 +1,4 @@
-package com.nagp.product.exception;
+package com.amcart.product.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
